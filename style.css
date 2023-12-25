@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Condensed:wght@500&display=swap');
+
+/* Link to the Montserrat font (you can include this in your HTML file) */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* Apply the font to the CalcSwift name */
+#calcswift {
+  font-family: 'Montserrat', sans-serif;
+  color: yellow;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+.container {
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.box {
+    height: 75%;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 1vh;
+    text-align: center;
+    background: green;
+}
+
+input {
+    height: 6vh;
+    width: 40vw;
+    font-size: 38px;
+    margin-top: 2vh;
+    border-radius: 1vh;
+    outline: none;
+    border: 2px solid black;
+    background: white;
+    color: black;
+    box-shadow: 10px 5px 5px black;
+}
+
+button {
+    padding: 2vh 3vw;
+    margin: 1vh 1vw;
+    font-size: 28px;
+    background: white;
+    color: black;
+    border-radius: 1vh;
+    cursor: pointer;
+    box-shadow: 10px 5px 5px black;
+    transition: .3s;
+}
+
+button:hover {
+    /* color: black; */
+    background: #2f4f4f;
+    box-shadow: none;
+}
+
+.a {
+    margin-top: 3vh;
+}
+
+/* .thatButton {
+    padding: 3vh 2.5vw;
+} */
+.btn2 {
+    padding: 2vh 2vw;
+}
+
+.equal {
+    background: red;
+}
+nav{
+    background: green;
+    width: 100%;
+    height: 20vh;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 1vh 1vw;
+    color: black;
+    background: yellow;
+    margin: 2vh 2vw;
+    font-size: 18px;
+    border-radius: 1vh;
+    margin-top: .5vh;
+}
+
+
+@media (max-width:767px) {
+    .box {
+        width: 90%;
+        height: 70%;
+        margin-top: -15vh;
+    }
+
+    button {
+        padding: 1vh 5vw;
+    }
+
+    input {
+        width: 80vw;
+        height: fit-content;
+    }
+
+    .a {
+        margin-top: .5vh;
+    }
+
+    .btn2 {
+        padding: 1vh .5vw;
+    }
+}
